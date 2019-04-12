@@ -1,0 +1,86 @@
+.header{
+	text-align: center;
+	padding: 10px;
+	background-color: #067a79;
+	}
+img{
+
+}
+.active{
+	background-color: #92ddbc;
+	border-radius: 2px;
+}
+ol{
+	background-color: #067a79;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  float: center; 
+  position: sticky;
+  position: -webkit-sticky;/*MacOS*/
+  top: 0;
+  width: 100%;
+  }
+ol{
+	display: block;
+	color: #1fc2ad;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.top{
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+} 
+.top:hover{
+	background-color: #92ddbc;
+	border-radius: 2px;
+}
+li{
+	float:left;
+}
+ul{
+  background-color: #067a79;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  float: center; 
+}
+li a{
+	display: block;
+	color: #1fc2ad;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-right: 1px solid #bbb;
+	box-shadow: 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.column{
+	float: center;
+	width: 50%;
+	padding: 10px;
+	border-color: #fff
+} 
+.left{
+	float: left;
+	width: 25%;
+	padding: 10px;
+	color: blue;
+}
+.right{
+	float: left;
+	width: 25%;
+	padding: 10px;
+	color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .column .left .right {
+    width: 100%;
+  }
+}
