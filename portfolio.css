@@ -1,26 +1,29 @@
 .header{
 	text-align: center;
-	padding: 10px;
-	background-color: #067a79;
+	padding: 30px;
+	background-color: white;
+	
 	}
 img{
-
+  max-width: 1000px;
+  max-height: 1000px;
 }
 .active{
 	background-color: #92ddbc;
 	border-radius: 2px;
 }
+/* Style for the Bottom Navigation link */
 ol{
-	background-color: #067a79;
+  background-color: #067a79;
   list-style-type: none;
   margin: 0;
-  padding: 0px;
+  padding: 5px;
   overflow: hidden;
-  float: center; 
   position: sticky;
-  position: -webkit-sticky;/*MacOS*/
-  top: 0;
+  bottom: 0;
   width: 100%;
+  position: -webkit-sticky;/*MacOS*/
+  float: center; 
   }
 ol{
 	display: block;
@@ -29,26 +32,29 @@ ol{
 	padding: 14px 16px;
 	text-decoration: none;
 }
-.top{
+/*Coincides with the Hover Button class*/
+.tb{
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 } 
-.top:hover{
+/*Hover button for the top and bottom Navigatioon bar*/
+.tb:hover{
 	background-color: #92ddbc;
-	border-radius: 2px;
 }
 li{
 	float:left;
 }
+/* Top Navigation Bar*/
 ul{
   background-color: #067a79;
   list-style-type: none;
   margin: 0;
   padding: 5px;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
+  position: -webkit-sticky;/*MacOS*/
   float: center; 
 }
 li a{
@@ -60,27 +66,74 @@ li a{
 	border-right: 1px solid #bbb;
 	box-shadow: 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.column{
-	float: center;
-	width: 50%;
+/* For the Column Paragraph on the Home */
+.middle{
+	float: right;
 	padding: 10px;
-	border-color: #fff
+	height: 572px;
+	width: 306px;
+	max-height: auto;
+	max-width: auto;
+	
 } 
 .left{
-	float: left;
-	width: 25%;
+	float: right;
 	padding: 10px;
+	height: 572px;
+	width: 306px;
 	color: blue;
+	max-height: auto;
+	max-width: auto;
 }
 .right{
 	float: left;
-	width: 25%;
 	padding: 10px;
+	height: 572px;
+	width: 306px;
+	color: red;
+	
+}
+
+/* For the Column paragraphs on the About Page */
+.aboutright{
+	float:right;
+	padding: 20px;
+	height: 572px;
+	width: 25%;
 	color: red;
 }
 
-@media screen and (max-width: 600px) {
-  .column .left .right {
-    width: 100%;
-  }
+.aboutleft{
+	float:left;
+	padding: 20px;
+	height: 572px;
+	width: 50%;
+	color: blue;
 }
+
+
+/* Style for the Bottom Navigation link */
+.btmnav {
+  background-color: #067a79;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;/*MacOS*/
+  bottom: 0;
+  width: 100%;
+  float: center;
+  overflow: hidden;
+  
+}
+
+.btmnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
